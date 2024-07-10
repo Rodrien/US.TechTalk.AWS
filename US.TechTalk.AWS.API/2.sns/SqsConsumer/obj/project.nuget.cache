@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oHM+R50uxSIq7trRuVs5EwSb0tG08Xfo/72ne//vCBmRFopFhE2aIbJ2ouOSu5monkhJOqOtOf7yB0YrnjG5QA==",
+  "success": true,
+  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\SqsConsumer\\SqsConsumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.304.27\\awssdk.core.3.7.304.27.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.sqs\\3.7.301.30\\awssdk.sqs.3.7.301.30.nupkg.sha512"
+  ],
+  "logs": []
+}
