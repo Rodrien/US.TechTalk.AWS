@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\SqsConsumer\\SqsConsumer.csproj",
+      "projectUniqueName": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\SqsConsumer\\SqsConsumer.csproj",
       "projectName": "SqsConsumer",
-      "projectPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\SqsConsumer\\SqsConsumer.csproj",
+      "projectPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\SqsConsumer\\SqsConsumer.csproj",
       "packagesPath": "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\",
-      "outputPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\SqsConsumer\\obj\\",
+      "outputPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\SqsConsumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Enrique Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",

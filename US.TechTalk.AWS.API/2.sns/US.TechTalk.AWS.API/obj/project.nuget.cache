@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+elzByU6hqrxMvGAWq21P1ha6R3lt5H7O+1mg7MVSo9HIPAR1v8rHUeb6QFWysdH00HmL3NjLQcY04Sh/sBcHg==",
+  "dgSpecHash": "0/wJarH0ptZq4U2WmISskhBQYsi2BM/uiFh+t4/2XDqS4G/C+S1QWnmgZvvRRRnRYX/zw51CZQMvZvwtgpaGHQ==",
   "success": true,
-  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
+  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.304.27\\awssdk.core.3.7.304.27.nupkg.sha512",
-    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.sqs\\3.7.301.30\\awssdk.sqs.3.7.301.30.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.301.65\\awssdk.simplenotificationservice.3.7.301.65.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

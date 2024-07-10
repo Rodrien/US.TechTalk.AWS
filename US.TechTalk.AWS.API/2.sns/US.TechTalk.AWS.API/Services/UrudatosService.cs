@@ -5,9 +5,9 @@ using US.TechTalk.AWS.API.Services.Interfaces;
 
 namespace US.TechTalk.AWS.API.Services
 {
-    public class UrudatosService(ISqsMessenger sqsMessenger) : IUrudatosService
+    public class UrudatosService(ISnsMessenger snsMessenger) : IUrudatosService
     {
-        private readonly ISqsMessenger _sqsMessenger = sqsMessenger;
+        private readonly ISnsMessenger _snsMessenger = snsMessenger;
 
         public async Task<bool> CreateAsync(Urudato urudato)
         {
@@ -19,7 +19,7 @@ namespace US.TechTalk.AWS.API.Services
 
             if (response)
             {
-                await _sqsMessenger.SendMessageAsync(urudato.ToUrudatoCreatedMessage());
+                await _snsMessenger.PublishMessageAsync(urudato.ToUrudatoCreatedMessage());
             }
 
             return response;

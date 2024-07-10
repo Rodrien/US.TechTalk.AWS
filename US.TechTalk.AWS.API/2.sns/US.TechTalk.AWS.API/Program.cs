@@ -1,4 +1,4 @@
-using Amazon.SQS;
+using Amazon.SimpleNotificationService;
 using US.TechTalk.AWS.API.Messaging;
 using US.TechTalk.AWS.API.Services;
 using US.TechTalk.AWS.API.Services.Interfaces;
@@ -8,9 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 var config = builder.Configuration;
 
-builder.Services.Configure<QueueSettings>(builder.Configuration.GetSection(QueueSettings.Key));
-builder.Services.AddSingleton<IAmazonSQS, AmazonSQSClient>();
-builder.Services.AddSingleton<ISqsMessenger, SqsMessenger>();
+builder.Services.Configure<TopicSettings>(builder.Configuration.GetSection(TopicSettings.Key));
+builder.Services.AddSingleton<IAmazonSimpleNotificationService, AmazonSimpleNotificationServiceClient>();
+builder.Services.AddSingleton<ISnsMessenger, SnsMessenger>();
 
 builder.Services.AddSingleton<IUrudatosService, UrudatosService>();
 

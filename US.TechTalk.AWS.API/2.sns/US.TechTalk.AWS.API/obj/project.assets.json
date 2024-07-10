@@ -15,18 +15,18 @@
           }
         }
       },
-      "AWSSDK.SQS/3.7.301.30": {
+      "AWSSDK.SimpleNotificationService/3.7.301.65": {
         "type": "package",
         "dependencies": {
           "AWSSDK.Core": "[3.7.304.27, 4.0.0)"
         },
         "compile": {
-          "lib/net8.0/AWSSDK.SQS.dll": {
+          "lib/net8.0/AWSSDK.SimpleNotificationService.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0/AWSSDK.SQS.dll": {
+          "lib/net8.0/AWSSDK.SimpleNotificationService.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -163,34 +163,34 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.SQS/3.7.301.30": {
-      "sha512": "xCvljFGhZsUx4CXPZmOeNEoTDgc7V0nzw97FV7LU7PA6N6kwCKya/MAdjmoRMhTvWmU1n5OE+PXE2kcLXS5zHg==",
+    "AWSSDK.SimpleNotificationService/3.7.301.65": {
+      "sha512": "Zs44y0JiWvry4by91BVIkgpXoloPLbwfiliQcRcYdJaqUlxwbk3OBgc13M36q0gPAPocWANjQBvtdsiSKZYUDw==",
       "type": "package",
-      "path": "awssdk.sqs/3.7.301.30",
+      "path": "awssdk.simplenotificationservice/3.7.301.65",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "analyzers/dotnet/cs/AWSSDK.SQS.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
         "analyzers/dotnet/cs/SharedAnalysisCode.dll",
-        "awssdk.sqs.3.7.301.30.nupkg.sha512",
-        "awssdk.sqs.nuspec",
+        "awssdk.simplenotificationservice.3.7.301.65.nupkg.sha512",
+        "awssdk.simplenotificationservice.nuspec",
         "images/AWSLogo.png",
-        "lib/net35/AWSSDK.SQS.dll",
-        "lib/net35/AWSSDK.SQS.pdb",
-        "lib/net35/AWSSDK.SQS.xml",
-        "lib/net45/AWSSDK.SQS.dll",
-        "lib/net45/AWSSDK.SQS.pdb",
-        "lib/net45/AWSSDK.SQS.xml",
-        "lib/net8.0/AWSSDK.SQS.dll",
-        "lib/net8.0/AWSSDK.SQS.pdb",
-        "lib/net8.0/AWSSDK.SQS.xml",
-        "lib/netcoreapp3.1/AWSSDK.SQS.dll",
-        "lib/netcoreapp3.1/AWSSDK.SQS.pdb",
-        "lib/netcoreapp3.1/AWSSDK.SQS.xml",
-        "lib/netstandard2.0/AWSSDK.SQS.dll",
-        "lib/netstandard2.0/AWSSDK.SQS.pdb",
-        "lib/netstandard2.0/AWSSDK.SQS.xml",
+        "lib/net35/AWSSDK.SimpleNotificationService.dll",
+        "lib/net35/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net35/AWSSDK.SimpleNotificationService.xml",
+        "lib/net45/AWSSDK.SimpleNotificationService.dll",
+        "lib/net45/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net45/AWSSDK.SimpleNotificationService.xml",
+        "lib/net8.0/AWSSDK.SimpleNotificationService.dll",
+        "lib/net8.0/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net8.0/AWSSDK.SimpleNotificationService.xml",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.xml",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -552,7 +552,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AWSSDK.SQS >= 3.7.301.30",
+      "AWSSDK.SimpleNotificationService >= 3.7.301.65",
       "FluentValidation >= 11.9.2",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -563,11 +563,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
+      "projectUniqueName": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
       "projectName": "US.TechTalk.AWS.API",
-      "projectPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
+      "projectPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
       "packagesPath": "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\",
-      "outputPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\1.sqs\\US.TechTalk.AWS.API\\obj\\",
+      "outputPath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\2.sns\\US.TechTalk.AWS.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Enrique Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -596,9 +596,9 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AWSSDK.SQS": {
+          "AWSSDK.SimpleNotificationService": {
             "target": "Package",
-            "version": "[3.7.301.30, )"
+            "version": "[3.7.301.65, )"
           },
           "FluentValidation": {
             "target": "Package",
