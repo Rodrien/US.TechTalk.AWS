@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "I75dmhpFKG4yD4IEYcicsaTYm6dLWCLeqjpIA/ivpBjs9FwnFRh7sm+RmhEsLQ8vn/jWw9H2U0/wNHjdo+8PVw==",
+  "success": true,
+  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\4.s3\\US.TechTalk.AWS.API\\US.TechTalk.AWS.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.304.28\\awssdk.core.3.7.304.28.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.s3\\3.7.310.5\\awssdk.s3.3.7.310.5.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.301.65\\awssdk.simplenotificationservice.3.7.301.65.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

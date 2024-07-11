@@ -1,0 +1,6 @@
+@US.TechTalk.AWS.API_HostAddress = http://localhost:5142
+
+GET {{US.TechTalk.AWS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

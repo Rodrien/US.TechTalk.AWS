@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ANNP9CU4wb6otn4ClaNfHueTK/EEQGbfhV7qINodK/X4qfSDPCdjxKpH0FMabP4zOUOYFKQHSjoayrTpAwogog==",
+  "success": true,
+  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\5.secretsManager\\SecretsManager\\SecretsManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.304.28\\awssdk.core.3.7.304.28.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.secretsmanager\\3.7.304.13\\awssdk.secretsmanager.3.7.304.13.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1rfFgRLfMtIN0+H/ZoWi5UMUHO1S+IYJmONs/QJ5UZU=",
+  "Source": "US.Secrets.API",
+  "BasePath": "_content/US.Secrets.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

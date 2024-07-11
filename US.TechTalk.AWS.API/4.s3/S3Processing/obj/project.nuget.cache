@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pzrL1gerj1yzxJ7sQY4V4a/qjNPFVZVrW1Rl2lqF/D1a15jFd702lLW8k9AKTsUasJzIfQcdCyouEkLS9iDD6w==",
+  "success": true,
+  "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\4.s3\\S3Processing\\S3Processing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.304.28\\awssdk.core.3.7.304.28.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.s3\\3.7.310.5\\awssdk.s3.3.7.310.5.nupkg.sha512"
+  ],
+  "logs": []
+}
