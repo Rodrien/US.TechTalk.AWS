@@ -21,9 +21,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "US.TechTalk.AWS.API", "2.sns\US.TechTalk.AWS.API\US.TechTalk.AWS.API.csproj", "{26121D5B-7C71-49BF-B329-917435BA811A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.dynamoDb", "3.dynamoDb", "{1C3C779B-F376-4C06-825C-C6E513F797B3}"
-	ProjectSection(SolutionItems) = preProject
-		3.dynamoDb\a.cs = 3.dynamoDb\a.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.s3", "4.s3", "{3A65EE85-92B0-454B-835D-96828CDFA811}"
 EndProject
@@ -37,11 +34,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3Upload", "4.s3\S3Upload\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3Processing", "4.s3\S3Processing\S3Processing.csproj", "{A801ABC8-C2F9-4EB9-9930-CA4D98DA74FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretsManager", "5.secretsManager\SecretsManager\SecretsManager.csproj", "{AA0CADDD-33C0-4E14-89F0-23FD397227A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretsManager", "5.secretsManager\SecretsManager\SecretsManager.csproj", "{AA0CADDD-33C0-4E14-89F0-23FD397227A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "US.Secrets.API", "5.secretsManager\US.Secrets.API\US.Secrets.API.csproj", "{6A321150-20C5-4BD7-A7ED-862B98CD70C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "US.Secrets.API", "5.secretsManager\US.Secrets.API\US.Secrets.API.csproj", "{6A321150-20C5-4BD7-A7ED-862B98CD70C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageS3Lambda", "6.lambda\ImageS3Lambda\src\ImageS3Lambda\ImageS3Lambda.csproj", "{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageS3Lambda", "6.lambda\ImageS3Lambda\src\ImageS3Lambda\ImageS3Lambda.csproj", "{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "US.TechTalk.AWS.API", "3.dynamoDb\US.TechTalk.AWS.API\US.TechTalk.AWS.API.csproj", "{8055E317-BF31-41CE-9424-A05F2D27DC23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +88,10 @@ Global
 		{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8055E317-BF31-41CE-9424-A05F2D27DC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8055E317-BF31-41CE-9424-A05F2D27DC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8055E317-BF31-41CE-9424-A05F2D27DC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8055E317-BF31-41CE-9424-A05F2D27DC23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +107,7 @@ Global
 		{AA0CADDD-33C0-4E14-89F0-23FD397227A9} = {B91B41B4-B2DF-4E50-A881-2C579610DC80}
 		{6A321150-20C5-4BD7-A7ED-862B98CD70C4} = {B91B41B4-B2DF-4E50-A881-2C579610DC80}
 		{FA6DEAE1-DFC3-4C9B-B96C-BB9E2E6DA927} = {2C43C8AA-3A3B-4EA8-9D5B-AB7009C63B0B}
+		{8055E317-BF31-41CE-9424-A05F2D27DC23} = {1C3C779B-F376-4C06-825C-C6E513F797B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED7C9231-D856-4F6C-A90C-CFCE282D5B1E}
