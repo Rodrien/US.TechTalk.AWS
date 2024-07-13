@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UECI+8UZ0tFfEK95Qrm4U6cQi3nTII4aUKZHZ2m1yMlk9s4iXskRwxiTiOkYqHMdUw03Je6pNAmj+6BMq4Y1RA==",
+  "dgSpecHash": "4xXkk2ebCbLI7uG3u2IaiHmm0WFZmbWkVOgc2vqHBjZEmGb1K6PDBRv82uQVElk1NnIPCXo1OuBvvvR6bjBkhw==",
   "success": true,
   "projectFilePath": "E:\\Enrique Rodriguez\\Documents\\GitRepos\\US.TechTalk.AWS\\US.TechTalk.AWS.API\\6.lambda\\ImageS3Lambda\\src\\ImageS3Lambda\\ImageS3Lambda.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.core\\3.7.302.12\\awssdk.core.3.7.302.12.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\awssdk.s3\\3.7.305.28\\awssdk.s3.3.7.305.28.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\sixlabors.imagesharp\\3.1.4\\sixlabors.imagesharp.3.1.4.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.netcore.app.runtime.linux-x64\\8.0.0\\microsoft.netcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
+    "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.linux-x64\\8.0.0\\microsoft.aspnetcore.app.runtime.linux-x64.8.0.0.nupkg.sha512",
     "C:\\Users\\Enrique Rodriguez\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.0\\microsoft.netcore.app.crossgen2.win-x64.8.0.0.nupkg.sha512"
   ],
   "logs": []

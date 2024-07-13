@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("US.TechTalk.AWS.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+095a2c2b545f19357e697854fb4097b619f819b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("US.TechTalk.AWS.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("US.TechTalk.AWS.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

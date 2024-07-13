@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageS3Lambda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6c94a6270b5f76dd5cd8c33fdd9d2f8d8b2107e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+095a2c2b545f19357e697854fb4097b619f819b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageS3Lambda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageS3Lambda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

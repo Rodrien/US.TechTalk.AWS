@@ -13,7 +13,7 @@ namespace US.TechTalk.AWS.API.Controllers
         [HttpPost("urudatos")]
         public async Task<IActionResult> Create([FromBody] UrudatoRequest request)
         {
-            var urudato = request.ToUrudato();
+            var urudato = request.ToUrudato ();
 
             await _urudatosService.CreateAsync(urudato);
 

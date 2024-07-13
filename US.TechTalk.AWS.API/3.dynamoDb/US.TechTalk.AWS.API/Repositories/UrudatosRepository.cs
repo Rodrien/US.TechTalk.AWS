@@ -15,13 +15,13 @@ namespace US.TechTalk.AWS.API.Repositories
         public async Task<bool> CreateAsync(UrudatoDto urudato)
         {
             urudato.UpdatedAt = DateTime.UtcNow;
-            var customerAsJson = JsonSerializer.Serialize(urudato);
-            var customerAsAttributes = Document.FromJson(customerAsJson).ToAttributeMap();
+            var urudatoAsJson = JsonSerializer.Serialize(urudato);
+            var urudatoAsAttributes = Document.FromJson(urudatoAsJson).ToAttributeMap();
 
             var createItemRequest = new PutItemRequest
             {
                 TableName = _tableName,
-                Item = customerAsAttributes,
+                Item = urudatoAsAttributes,
                 ConditionExpression = "attribute_not_exists(pk) and attribute_not_exists(sk)"
             };
 
