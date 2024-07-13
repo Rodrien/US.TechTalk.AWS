@@ -1,7 +1,7 @@
-﻿using System.Text.Json;
-using Amazon.SimpleNotificationService;
+﻿using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 using Microsoft.Extensions.Options;
+using System.Text.Json;
 
 namespace US.TechTalk.AWS.API.Messaging;
 
@@ -13,7 +13,7 @@ public class SnsMessenger(IAmazonSimpleNotificationService sns, IOptions<TopicSe
 
     public async Task<PublishResponse> PublishMessageAsync<T>(T message)
     {
-        var topicArn = await GetQueueUrlAsync();
+        var topicArn = await GetTopicArnAsync();
 
         var sendMessageRequest = new PublishRequest
         {
@@ -34,7 +34,7 @@ public class SnsMessenger(IAmazonSimpleNotificationService sns, IOptions<TopicSe
         return await _sns.PublishAsync(sendMessageRequest);
     }
 
-    private async Task<string> GetQueueUrlAsync()
+    private async Task<string> GetTopicArnAsync()
     {
         if (_topicArn is not null)
         {

@@ -14,7 +14,7 @@ namespace US.TechTalk.AWS.API.Services
             var putObjectRequest = new PutObjectRequest
             {
                 BucketName = _bucketName,
-                Key = $"images/{id}",
+                Key = $"fotos/{id}",
                 ContentType = file.ContentType,
                 InputStream = file.OpenReadStream(),
                 Metadata =
@@ -33,7 +33,7 @@ namespace US.TechTalk.AWS.API.Services
             var getObjectRequest = new GetObjectRequest
             {
                 BucketName = _bucketName,
-                Key = $"images/{id}"
+                Key = $"fotos/{id}"
             };
 
             return await _s3.GetObjectAsync(getObjectRequest);
@@ -44,7 +44,7 @@ namespace US.TechTalk.AWS.API.Services
             var deleteObjectRequest = new DeleteObjectRequest
             {
                 BucketName = _bucketName,
-                Key = $"images/{id}"
+                Key = $"fotos/{id}"
             };
 
             return await _s3.DeleteObjectAsync(deleteObjectRequest);

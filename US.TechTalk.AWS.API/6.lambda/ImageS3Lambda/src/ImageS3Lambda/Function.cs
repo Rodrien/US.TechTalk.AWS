@@ -1,7 +1,11 @@
 using Amazon.Lambda.Core;
 using Amazon.Lambda.S3Events;
 using Amazon.S3;
+using Amazon.S3.Model;
 using Amazon.S3.Util;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Advanced;
+using SixLabors.ImageSharp.Processing;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -40,6 +44,8 @@ namespace ImageS3Lambda
         /// <returns></returns>
         public async Task FunctionHandler(S3Event evnt, ILambdaContext context)
         {
+            const string resizedBucketName = "usawstechtalkresized";
+
             var eventRecords = evnt.Records ?? new List<S3Event.S3EventNotificationRecord>();
             foreach (var record in eventRecords)
             {
@@ -51,12 +57,52 @@ namespace ImageS3Lambda
 
                 try
                 {
-                    var response = await this.S3Client.GetObjectMetadataAsync(s3Event.Bucket.Name, s3Event.Object.Key);
-                    context.Logger.LogInformation(response.Headers.ContentType);
+                    context.Logger.LogInformation($"Item with key {s3Event.Object.Key} trying to get metadata");
+
+                    var response = await S3Client.GetObjectMetadataAsync(s3Event.Bucket.Name, s3Event.Object.Key);
+                    
+                    context.Logger.LogInformation($"Item with key {s3Event.Object.Key} got metadata");
+
+                    await using var itemStream = await S3Client.GetObjectStreamAsync(s3Event.Bucket.Name, s3Event.Object.Key,
+                        new Dictionary<string, object>());
+
+                    if (itemStream is null)
+                    {
+                        context.Logger.LogInformation($"ItemStream is null for: {s3Event.Object.Key}");
+
+                        throw new NullReferenceException($"ItemStream is null for: {s3Event.Object.Key}");
+                    }
+
+                    using var outStream = new MemoryStream();
+                    using (var image = await Image.LoadAsync(itemStream))
+                    {
+                        image.Mutate(x => x.Resize(500, 500, KnownResamplers.Lanczos3));
+                        var originalName = response.Metadata["x-amz-meta-originalname"]; 
+
+                        await image.SaveAsync(outStream, image.DetectEncoder(originalName));
+                    }
+
+                    await S3Client.PutObjectAsync(new PutObjectRequest
+                    {
+                        //BucketName = s3Event.Bucket.Name, // Original bucket
+                        BucketName = resizedBucketName, // Different bucket
+                        Key = "500px" + s3Event.Object.Key, // Change object name
+                        Metadata = {
+                        ["x-amz-meta-originalname"] = response.Metadata["x-amz-meta-originalname"],
+                        ["x-amz-meta-extension"] = response.Metadata["x-amz-meta-extension"],
+                        ["x-amz-meta-resized"] = true.ToString()
+                    },
+                        ContentType = response.Headers.ContentType,
+                        InputStream = outStream
+                    });
+
+                    context.Logger.LogInformation($"Resized image with key: {s3Event.Object.Key}");
                 }
                 catch (Exception e)
                 {
-                    context.Logger.LogError($"Error getting object {s3Event.Object.Key} from bucket {s3Event.Bucket.Name}. Make sure they exist and your bucket is in the same region as this function.");
+                    //context.Logger.LogError(
+                    //    $"Error getting object {s3Event.Object.Key} from bucket {s3Event.Bucket.Name}. Make sure they exist and your bucket is in the same region as this function.");
+                    context.Logger.LogError("Unhandled exception in function.");
                     context.Logger.LogError(e.Message);
                     context.Logger.LogError(e.StackTrace);
                     throw;

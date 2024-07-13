@@ -13,20 +13,22 @@ var secretsManagerClient = new AmazonSecretsManagerClient();
 
 //var versionResponse = await secretsManagerClient.ListSecretVersionIdsAsync(listSecretVersionsRequest);
 
-//var request = new GetSecretValueRequest
-//{
-//    SecretId = "ApiKey",
-//    VersionId = "3611dede-5fbc-4a0b-949a-585f3c6f84b2"
-//};
+var request = new GetSecretValueRequest
+{
+    SecretId = "Development_US.Secrets.API_SecretApiSettings__ApiKey2"
+    //SecretId = "ApiKey",
+    //VersionId = "3611dede-5fbc-4a0b-949a-585f3c6f84b2"
+};
 
-//var response = await secretsManagerClient.GetSecretValueAsync(request);
+var response = await secretsManagerClient.GetSecretValueAsync(request);
 
-//Console.WriteLine(response.SecretString);
+Console.WriteLine(response.SecretString);
 
 
 var describeSecretRequest = new DescribeSecretRequest
 {
-    SecretId = "ApiKey"
+    SecretId = "Development_US.Secrets.API_SecretApiSettings__ApiKey2"
+    //SecretId = "ApiKey"
 };
 
 var describeResponse = await secretsManagerClient.DescribeSecretAsync(describeSecretRequest);

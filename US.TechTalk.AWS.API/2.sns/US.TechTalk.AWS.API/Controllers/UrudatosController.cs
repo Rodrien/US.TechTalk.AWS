@@ -22,6 +22,18 @@ namespace US.TechTalk.AWS.API.Controllers
             return CreatedAtAction("Get", new { id = urudatoResponse.Id }, urudatoResponse);
         }
 
+        [HttpDelete("urudatos/{id:guid}")]
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        {
+            var deleted = await _urudatosService.DeleteAsync(id);
+            if (!deleted)
+            {
+                return NotFound();
+            }
+
+            return Ok();
+        }
+
         [HttpGet("urudatos")]
         public async Task<IActionResult> GetAll()
         {

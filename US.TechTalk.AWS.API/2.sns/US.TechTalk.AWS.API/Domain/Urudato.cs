@@ -1,4 +1,6 @@
-﻿namespace US.TechTalk.AWS.API.Domain
+﻿using Amazon.SimpleNotificationService.Model;
+
+namespace US.TechTalk.AWS.API.Domain
 {
     public class Urudato
     {
@@ -9,5 +11,15 @@
         public string Email { get; set; } = default!;
 
         public DateTime DateOfBirth { get; set; } = default!;
+
+        public static Urudato Dummy()
+        {
+            return new Urudato { 
+                Id = Guid.NewGuid(),
+                Name = "Dummy",
+                Email = "Dummy@dummy.com",
+                DateOfBirth = DateTime.UtcNow
+            };
+        }
     }
 }

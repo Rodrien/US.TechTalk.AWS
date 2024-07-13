@@ -15,4 +15,15 @@ public static class DomainToMessageMapper
             DateOfBirth = customer.DateOfBirth
         };
     }
+
+    public static UrudatoDeleted ToUrudatoDeletedMessage(this Urudato customer)
+    {
+        return new UrudatoDeleted
+        {
+            Id = customer.Id,
+            Name = customer.Name,
+            Email = customer.Email,
+            DateOfBirth = customer.DateOfBirth
+        };
+    }
 }

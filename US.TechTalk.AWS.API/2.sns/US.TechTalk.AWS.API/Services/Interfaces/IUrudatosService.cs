@@ -6,6 +6,8 @@ namespace US.TechTalk.AWS.API.Services.Interfaces
     {
         Task<bool> CreateAsync(Urudato urudato);
 
+        Task<bool> DeleteAsync(Guid id);
+
         Task<Urudato> GetAsync(Guid id);
 
         Task<IEnumerable<Urudato>> GetAllAsync();

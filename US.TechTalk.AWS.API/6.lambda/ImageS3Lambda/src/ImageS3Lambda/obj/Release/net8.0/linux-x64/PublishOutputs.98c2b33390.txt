@@ -1,0 +1,10 @@
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\ImageS3Lambda.deps.json
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\ImageS3Lambda.runtimeconfig.json
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\ImageS3Lambda.pdb
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\Amazon.Lambda.Core.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\Amazon.Lambda.S3Events.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\Amazon.Lambda.Serialization.SystemTextJson.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\AWSSDK.Core.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\AWSSDK.S3.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\SixLabors.ImageSharp.dll
+E:\Enrique Rodriguez\Documents\GitRepos\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda\bin\Release\net8.0\publish\ImageS3Lambda.dll

@@ -25,6 +25,23 @@ namespace US.TechTalk.AWS.API.Services
             return response;
         }
 
+        public async Task<bool> DeleteAsync(Guid id)
+        {
+            // Here goes access to DB
+
+            // More custom logic
+            Urudato urudato = Urudato.Dummy();
+
+            var response = true;
+
+            if (response)
+            {
+                await _snsMessenger.PublishMessageAsync(urudato.ToUrudatoDeletedMessage());
+            }
+
+            return response;
+        }
+
         public Task<IEnumerable<Urudato>> GetAllAsync()
         {
             throw new NotImplementedException();
