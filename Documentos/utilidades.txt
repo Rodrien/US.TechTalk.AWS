@@ -1,0 +1,20 @@
+Guids:
+28082571-6655-4a6f-acb5-d32bf3d167c8
+53a67f36-b97b-49a4-a25d-9935ec4ad572
+512c8b5b-2896-4c3f-83b7-42e29b0049d3
+a0df33c9-43d7-4058-a994-0f2c6e6534b6
+3846fff6-f551-4bc1-b2ed-d6726a119a1d
+43a8312c-36c6-4b34-8bbf-0cb2b5c76897
+e9b39fc2-9861-47e5-910f-2998f719716c
+57cc7a59-ac45-4312-b9dc-124acabca419
+a8f2ad93-b99d-413d-9b97-f369d6ee791e
+d87e7b01-eba3-4ae2-8c7f-0446a7fbefd5
+
+URL Image: http://localhost:5142/urudatos/28082571-6655-4a6f-acb5-d32bf3d167c9/image
+
+Comandos lambda:
+dotnet lambda deploy-function ImageS3Lambda
+dotnet lambda deploy-function ResizeFotosS3Lambda
+
+Ruta lambda: 
+C:\Users\erodriguez\Documents\Repositorios\US.TechTalk.AWS\US.TechTalk.AWS.API\6.lambda\ImageS3Lambda\src\ImageS3Lambda
