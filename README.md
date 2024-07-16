@@ -1,5 +1,5 @@
 # AWS Tech Talk
-Este repositorio contiene el codigo de muestra utilizado en la segunda edicion de Tech Talks organizado por Urudata Software en la que di una charla titulada "Introduccion a AWS para desarrolladores c#.
+Este repositorio contiene el código de muestra utilizado en la segunda edición de Tech Talks organizado por Urudata Software en la que di una charla titulada "Introducción a AWS para desarrolladores c#.
 
 ![Primer slide presentacion](Documentos/imagenesGithub/ppt.png)
 
